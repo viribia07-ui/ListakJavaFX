@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.listakjavafx.ListakController">
+<VBox alignment="CENTER" prefHeight="429.0" prefWidth="459.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.listakjavafx.ListakController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+   <children>
+      <AnchorPane prefHeight="393.0" prefWidth="419.0">
+         <children>
+            <ListView layoutX="91.0" layoutY="8.0" prefHeight="374.0" prefWidth="114.0" />
+            <ListView layoutX="291.0" layoutY="10.0" prefHeight="374.0" prefWidth="114.0" />
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="221.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="221.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="14.0" text="1">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="128.0" text="2">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="219.0" text="3">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
 </VBox>
