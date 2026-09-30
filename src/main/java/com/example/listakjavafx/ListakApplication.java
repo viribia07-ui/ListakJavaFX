@@ -11,7 +11,7 @@ public class ListakApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ListakApplication.class.getResource("listak-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 459, 464);
+        Scene scene = new Scene(fxmlLoader.load(), 450, 465);
         stage.setTitle("Listák");
         stage.setScene(scene);
         stage.show();

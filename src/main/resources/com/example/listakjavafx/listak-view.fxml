@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="464.0" prefWidth="459.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.listakjavafx.ListakController">
+<VBox alignment="CENTER" prefHeight="465.0" prefWidth="426.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.listakjavafx.ListakController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -13,47 +14,68 @@
       <AnchorPane prefHeight="439.0" prefWidth="419.0">
          <children>
             <ListView layoutX="91.0" layoutY="8.0" prefHeight="415.0" prefWidth="114.0" />
-            <ListView layoutX="291.0" layoutY="10.0" prefHeight="415.0" prefWidth="114.0" />
-            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="216.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+            <ListView layoutX="291.0" layoutY="5.0" prefHeight="415.0" prefWidth="114.0" />
+            <ImageView id="addImgButton" fx:id="addImgButton" fitHeight="70.0" fitWidth="70.0" layoutX="216.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../add.png" />
-               </image></ImageView>
-            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="216.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView id="removeImgButton" fx:id="removeImgButton" fitHeight="70.0" fitWidth="70.0" layoutX="216.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../del.png" />
-               </image></ImageView>
-            <Label alignment="CENTER" contentDisplay="TOP" layoutY="14.0" text="1">
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <Label id="kitty1" fx:id="kitty1" alignment="CENTER" contentDisplay="TOP" layoutY="10.0" text="1">
                <graphic>
-                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../kitty.png" />
                      </image></ImageView>
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Label>
-            <Label alignment="CENTER" contentDisplay="TOP" layoutY="121.0" text="2">
+            <Label id="mushroom2" fx:id="mushroom2" alignment="CENTER" contentDisplay="TOP" layoutY="125.0" text="2">
                <graphic>
-                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../gomba.png" />
                      </image></ImageView>
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Label>
-            <Label alignment="CENTER" contentDisplay="TOP" layoutY="244.0" text="3">
+            <Label id="bird3" fx:id="bird3" alignment="CENTER" contentDisplay="TOP" layoutY="252.0" text="3">
                <graphic>
-                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../madar.png" />
                      </image></ImageView>
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Label>
-            <ImageView fitHeight="45.0" fitWidth="40.0" layoutX="251.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="deleteImgButton2" fx:id="deleteImgButton2" fitHeight="45.0" fitWidth="30.0" layoutX="251.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../kuka.png" />
-               </image></ImageView>
-            <ImageView fitHeight="45.0" fitWidth="40.0" layoutX="50.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView id="deleteImgButton1" fx:id="deleteImgButton1" fitHeight="45.0" fitWidth="30.0" layoutX="50.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../kuka.png" />
-               </image></ImageView>
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
          </children>
       </AnchorPane>
    </children>

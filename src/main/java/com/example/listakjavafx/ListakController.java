@@ -5,10 +5,10 @@ import javafx.scene.control.Label;
 
 public class ListakController {
     @FXML
-    private Label welcomeText;
+    public Label kitty1, mushroom2, bird3;
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
+    //@FXML
+    //protected void onHelloButtonClick() {
+    //    welcomeText.setText("Welcome to JavaFX Application!");
+    //}
 }
